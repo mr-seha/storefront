@@ -1,0 +1,26 @@
+[[source]]
+url = "https://pypi.org/simple"
+verify_ssl = true
+name = "pypi"
+
+[packages]
+django-cors-headers = "*"
+django = "*"
+django-templated-mail = "*"
+celery = "*"
+redis = "*"
+flower = "*"
+django-redis = "*"
+whitenoise = "*"
+gunicorn = "*"
+
+[dev-packages]
+pytest = "*"
+pytest-django = "*"
+pytest-watch = "*"
+model-bakery = "*"
+locust = "*"
+django-silk = "*"
+
+[requires]
+python_version = "3.11"

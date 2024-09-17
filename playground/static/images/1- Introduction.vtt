@@ -1,0 +1,20 @@
+WEBVTT
+
+1
+00:00:02.009 --> 00:00:04.349
+Unknown: Welcome back to another
+section of the Ultimate Django
+
+2
+00:00:04.349 --> 00:00:07.319
+course in this section we'll be
+talking about sending emails
+
+3
+00:00:07.349 --> 00:00:10.829
+from your Django applications,
+so let's jump right in and get
+
+4
+00:00:10.829 --> 00:00:11.279
+started.

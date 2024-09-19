@@ -17,12 +17,12 @@ class SayHello(APIView):
 
     @method_decorator(cache_page(2*60))
     def get(self, request):
-        try:
-            response = requests.get("https://httpbin.org/delay/2")
-            data = response.json()
-            logger.info("salam")
-        except requests.ConnectionError:
-            pass
+        # try:
+        #     # response = requests.get("https://httpbin.org/delay/2")
+        #     # data = response.json()
+        #     # logger.info("salam")
+        # except requests.ConnectionError:
+        #     pass
 
         # notify_customers.delay("hello")
         # try:
@@ -34,13 +34,13 @@ class SayHello(APIView):
         #     message.send(to=['john@mosh.com'])
         # except BadHeaderError:
         #     print("bad")
-        return Response({'name': data}, status=200)
+        return Response({'name': 'data'}, status=200)
 
 
 @cache_page(2*60)
 def say_hello(request):
-    response = requests.get("https://httpbin.org/delay/2")
-    data = response.json()
+    # response = requests.get("https://httpbin.org/delay/2")
+    # data = response.json()
 
     # notify_customers.delay("hello")
     # try:
@@ -52,4 +52,4 @@ def say_hello(request):
     #     message.send(to=['john@mosh.com'])
     # except BadHeaderError:
     #     print("bad")
-    return render(request, 'hello.html', {'name': data})
+    return render(request, 'hello.html', {'name': 'data'})
